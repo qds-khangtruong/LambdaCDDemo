@@ -13,10 +13,10 @@ Resources:
       Timeout: 30
       Role: 'arn:aws:iam::575761299872:role/CloudFormationServiceRole'
       Events:
-        getAZsAPI:
+        getTokenAPI:
           Type: Api
           Properties:
-            Path: /getazs
+            Path: /token
             Method: get
       Environment:
         Variables:
